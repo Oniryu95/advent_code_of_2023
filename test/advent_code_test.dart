@@ -1,5 +1,6 @@
 import 'package:test/test.dart';
 import 'package:advent_code/day_1/second_riddle.dart' as d1r2;
+import 'package:advent_code/day_3/first_riddle.dart' as d3r1;
 
 void main() {
   test('d1r2', () {
@@ -15,5 +16,16 @@ void main() {
     expect(d1r2.getCalibrationValue('zoneight234'), 14);
     expect(d1r2.getCalibrationValue('7pqrstsixteen'), 76);
     expect(d1r2.getCalibrationValue('ninesevensrzxkzpmgz8kcjxsbdftwoner'), 91);
+  });
+
+  test('d3r1', () {
+    expect(d3r1.solution('''..3..
+                            .....'''), 0);
+    expect(d3r1.solution('''..3..
+                            ..#..'''), 3);
+    expect(d3r1.solution('''..3..
+                            .#...'''), 3);
+    expect(d3r1.solution('''..3..
+                            .#.4+'''), 7);
   });
 }
