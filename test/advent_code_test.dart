@@ -27,5 +27,11 @@ void main() {
                             .#...'''), 3);
     expect(d3r1.solution('''..3..
                             .#.4+'''), 7);
+    expect(d3r1.solution('''..32..
+                            .#.41+'''), 73);
+    expect(d3r1.solution('''..323.
+                            .#+411'''), 734);
+    expect(d3r1.solution('''......
+                            ......'''), 0);
   });
 }
